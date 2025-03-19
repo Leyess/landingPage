@@ -1,2 +1,1 @@
 # landingPage
-<p>Hola</p>
