@@ -5,6 +5,12 @@ body{
 .cabecera{
     background-color: #7040DF;
 }
+
 .data{
     background-color: white;
+}
+
+#contenedor{
+    background-color: aliceblue;
+    
 }
