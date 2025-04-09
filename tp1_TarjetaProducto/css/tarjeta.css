@@ -5,4 +5,9 @@ body{
 .producto{
     width: 250px;
     height: 100px;
+    background-color: steelblue;
+}
+
+.FotoProducto{
+    
 }
