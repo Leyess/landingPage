@@ -18,11 +18,14 @@ img{
     height: 100px;
     background-color: steelblue;
     padding: 10px; /*separacion interna del contenedor padre*/
+    border-radius: 8px;
+    display: flex;
 }
 
 .fotoProducto{
     width: 80px;
     height: 80px;
-    overflow: auto; /* Oculta el contenido que se sale del contenedor*/
+    border-radius: 6px;
+    overflow: hidden; /* Oculta el contenido que se sale del contenedor*/
 
 }
