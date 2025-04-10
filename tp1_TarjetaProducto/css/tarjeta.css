@@ -6,26 +6,54 @@
 
 body{
     background-color: beige;
+    font-family:'Courier New', Courier, monospace!important;
 }
 
 img{
     width: 100%; height: 100%;
     object-fit: cover; /* Hace que la imagen ocupe todo el contenedor sin deformarse */
+    background-color: white;
 }
 
 .producto{
     width: 250px;
-    height: 100px;
+    height: auto;
     background-color: steelblue;
-    padding: 10px; /*separacion interna del contenedor padre*/
+    padding: 10px; /* Separacion interna del contenedor padre*/
     border-radius: 8px;
     display: flex;
+    gap: 10px; /* Espacio entre los elementos de la tarjeta*/
 }
 
 .fotoProducto{
-    width: 80px;
-    height: 80px;
+    width: 90px; 
+    height: 90px; 
+    /*flex-grow: 0; /* Hace que la imagen ocupe todo el espacio disponible*/
+    /*flex-shrink: 0; /* Hace que la imagen no se reduzca si el contenedor es más pequeño*/
+    /*flex-basis: 80px; /* Hace que la imagen ocupe el 80% del contenedor*/
+    flex: 0 0 80px;
     border-radius: 6px;
     overflow: hidden; /* Oculta el contenido que se sale del contenedor*/
+}
 
+.datoProducto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacio entre los elementos de la tarjeta*/
+    text-transform: uppercase;
+}
+
+.valoresProducto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.valoracion{
+    background-color: goldenrod;
+    height: 30px;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    line-height: 30px;
+    text-align: center;
 }
