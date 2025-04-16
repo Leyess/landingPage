@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilosFusion.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="container-login">
+
+        <h1 class="logo">Fusion.</h1>
+
+        <form class="loginFormContainer" action="login.php" method="POST">
+            <div class="formLogin">
+                <div class="formUsername">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="formPassword">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                
+
+            </div>
+
+            <div class="actionLogin">
+                <div class="formSubmit">
+                    <input type="submit" value="Login">
+                    <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>    
+                </div>    
+            </div>
+            
+        </form>
+        
+
+    </div>
+
+</body>
+</html>
