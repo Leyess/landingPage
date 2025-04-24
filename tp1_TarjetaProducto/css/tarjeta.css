@@ -9,7 +9,7 @@
 
 body{
     background-color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+    font-family: 'Courier New', Courier, monospace!important;
     display: grid;
     place-items: center;
     height: 100vh;
@@ -142,7 +142,7 @@ header button:hover{
     font-size: 1.5em;
     cursor: pointer;
     flex: 0 0 150px;
-    text-align: center;
+    text-align: center;    
 }
 
 a{
