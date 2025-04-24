@@ -11,6 +11,8 @@ body{
     font-family:'Courier New', Courier, monospace!important;
     display: grid;
     place-items: center;
+    height: 100vh;
+    padding: .5em;
 }
 
 img{
@@ -20,8 +22,8 @@ img{
 }
 
 .producto{
-    width: 250px;
-    height: auto;
+    width: 100%;
+    height: 130;
     background-color: steelblue;
     padding: 10px; /* Separacion interna del contenedor padre*/
     border-radius: 8px;
@@ -72,9 +74,53 @@ img{
     text-align: center;
 }
 
-.columna{
+.contenedorProducto{
     display: flex;
     flex-direction: column;
-    gap: 0,7em;
     gap: 0.7em;
+    width: 100%;
+}
+
+/* ------------menu desplegable------------------ */
+header{
+    display: flex;
+    flex-direction: column;    
+    width: 100%;    
+    padding: 0;
+}
+
+.menu{
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscadorCarrito{
+    display: flex;
+    gap: 0.5em;
+}
+
+header button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25em;
+    color: black;
+}
+
+header button:hover{
+    color: rgb(55, 156, 55);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.buscador input{
+    display: none;
 }
