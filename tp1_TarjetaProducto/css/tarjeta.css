@@ -142,5 +142,9 @@ header button:hover{
     font-size: 1.5em;
     cursor: pointer;
     flex: 0 0 150px;
-    background-color: rgba(238, 130, 238, 0.438);
+    text-align: center;    
+}
+
+a{
+    text-decoration: none;
 }
