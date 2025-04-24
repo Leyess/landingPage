@@ -4,6 +4,7 @@
     box-sizing: border-box; /* Hace que el padding no afecte al tamaño de la tarjeta*/
     margin: 0;
     padding: 0;
+    list-style: none; /* Elimina los puntos de la lista*/
 }
 
 body{
@@ -13,6 +14,7 @@ body{
     place-items: center;
     height: 100vh;
     padding: .5em;
+    max-width: 100vw;
 }
 
 img{
@@ -74,7 +76,7 @@ img{
     text-align: center;
 }
 
-.contenedorProducto{
+.contenedorProductos{
     display: flex;
     flex-direction: column;
     gap: 0.7em;
@@ -93,7 +95,7 @@ header{
     width: 100%;
     display: flex;    
     justify-content: space-between;
-    /* background-color: aqua; */
+    background-color: steelblue;
 }
 
 ul{
@@ -103,9 +105,17 @@ ul{
     align-items: center;
 }
 
+.logo{
+    font-size: 1.5em;
+}
+
 .buscadorCarrito{
     display: flex;
     gap: 0.5em;
+}
+
+.buscador input{
+    display: none;
 }
 
 header button{
@@ -121,6 +131,16 @@ header button:hover{
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.buscador input{
-    display: none;
+.categoriasListas{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    overflow: auto;
+}
+
+.categoriasListas li{
+    font-size: 1.5em;
+    cursor: pointer;
+    flex: 0 0 150px;
+    background-color: rgba(238, 130, 238, 0.438);
 }
