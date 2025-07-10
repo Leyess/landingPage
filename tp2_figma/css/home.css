@@ -1,5 +1,9 @@
-
 @import url('../../assets/fawesome-all.css');
+
+:root {
+    --heading: 'Poppins', sans-serif;
+    --body-text: 'Roboto', sans-serif;
+}
 
 * {
     margin: 0;
@@ -12,7 +16,6 @@
 body {
     height: 100vh;
     width: 100%;
-
 }
 
 header {
@@ -20,20 +23,6 @@ header {
     background-color: slateblue;
     height: 30%;
     width: 100%;
-}
-
-
-header .buscador {    
-    background-color: #03D99D;
-    position: absolute;
-    height: 3em;
-    width: 80%;
-    margin: 0 10%;
-    bottom: -1.5em;
-    border-radius: 0.5em;
-
-    display: flex;
-
 }
 
 header .imgFondo {
@@ -45,29 +34,47 @@ header .imgFondo {
 
 }
 
-.buscador img {
+header .buscador {    
+    background-color: #ffffff;
     position: absolute;
-    top: 50%;
-    left: 1em;
-    transform: translateY(-50%);
-    width: 2em;
-    height: 2em;
+    height: 3em;
+    width: 80%;
+    margin: 0 10%;
+    bottom: -1.5em;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador i {
+    flex: 0 0 2em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+
 }
 
 .btnBuscador {
     flex: 0 0 3em;
-    height: 3em;
-    background-color: transparent;
+    height: 100%;
+    background-color: transparent;    
+    color: #333;
+    border: none;
+    cursor: pointer;
 }
 
-.btnBuscar {
+.inputBuscar {
     flex: 1;
     height: 100%;
     border: none;
-    padding: 0 1em;
-    font-size: 1.2em;
+    padding: 0 1em;    
     color: #333;
-    border-radius: 0.5em;
+    border: none;
+    border-radius: 5px 0 0 5px;
 }
 
 .imgFondo img {
@@ -107,12 +114,15 @@ main .categorias {
     flex-shrink: 0;
     flex-basis: 100px; */
     flex: 0 0 100px;
-
-    background-color: gray;
+    align-content: space-evenly;
+    background-color: transparent;
     border-radius: 1em;
     display: grid;
     place-items: center;
     text-transform: uppercase;
+    font-size: 1em;
+    color: #333;
+    font-weight: 200;
 }
 
 main .restoContainer {
@@ -122,19 +132,63 @@ main .restoContainer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 1em;
+    gap: 1.5em;
     flex-wrap: wrap;
 }
 
-.restoContainer .resto {
+.resto {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 100%;
-    flex: 0 0 200px;
-    /*declaro la ALTURA si d-flex es columna*/
-    display: grid;
-    place-items: center;
+    /* flex: 0 0 200px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     font-size: 3em;
-    font-family: var(--body-text);
+    border-radius: 8px;    
+    position: relative;
+    font-family:var(--body-text);
+}
+
+.resto .restoImg{
+    /* width: 100%; */
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.infoResto {
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-start;
+    padding: 1em;
+    gap: 0.5em;
+    height: 100%; 
+    width: 54%;   
+    font-size: 15px;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    left: 45%;
+    
+    border-radius: 0 0 0 25px;
+}
+
+.calificacion {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #03D99D;
+    color: white;
+    height: 40px;
+    width: 42px;
+    text-align: center;
+    align-content: center;
+    padding: 4px 6px;
+    border-radius: 10px 0 10px 0;
+    font-weight: bold;
+    font-size:20px;
 }
 
 .hidden{

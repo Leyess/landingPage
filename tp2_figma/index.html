@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/home.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <div class="imgFondo">
             <img src="./img/fondopc.jpg" alt="restaurante caro" class="logo">
         </div>
         <div class="buscador">
-            <input type="search" class="btnBuscar" value="Buscar"><button type="submit" class="btnBuscador"><i class="fa fa-search"></i></button>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <input type="search" class="inputBuscar" value="Buscar">
+            <button type="submit" class="btnBuscador"><i class="fa fa-search"></i></button>
         </div>
     </header>
+
     <main>
         <div class="categorias">
-            <div class="icono" onclick="mostrarAlerta()">link1</div>
-            <div class="icono">link2</div>           
-            <div class="icono">link4</div>
-            <div class="icono">link5</div>
+            <div class="icono" onclick="mostrarAlerta()">
+                <img src="./img/icon_chinese.png">
+                <p>CHINESE</p>
+            </div>
+            <div class="icono">
+                <img src="./img/icon_taco.png">
+                <p>TACOS</p>
+            </div>
+            <div class="icono">
+                <img src="./img/icon_burguer.png">
+                <p>BURGUER</p>
+            </div>
+            <div class="icono">
+                <img src="./img/icon_donut.png">
+                <p>DONUTS</p>
+            </div>
             <div class="icono">link6</div>
             <div class="icono">link7</div>
             <div class="icono">link8</div>
             <div class="icono">link9</div>
-
+            <div class="icono">link10</div>
         </div>
         <section class="restoContainer">
             <div class="modal sofiacond hidden">
@@ -35,35 +52,48 @@
                     </button>
                 </div>
                 <div class="alerta-texto">
-                    <p>¡Hola! ¿Cómo estás? Te damos la bienvenida a Pedilo Ya, la app de delivery más rápida y confiable. 
-                    <br>¿Qué te gustaría pedir hoy?</p>
+                    <p>¡Hola! ¿Cómo estás? Te damos la bienvenida a Pedilo Ya, la app de delivery más rápida y
+                        confiable.
+                        <br>¿Qué te gustaría pedir hoy?
+                    </p>
                 </div>
                 <div class="alerta-boton pd-2">
                     <button class="btn">Empezar</button>
                 </div>
             </div>
-            <article class="resto">1</article>
+
+            <article class="resto">
+                <img src="./img/resto.png" alt="restaurante 1" class="restoImg">
+                <div class="infoResto">
+                    <h2 class="restoNombre">II Ravioloni</h2>
+                    <p class="restoDescripcion">Comida Italiana, 15 min</p>
+                    <p class="restoHorario">9:00 - 11:00</p>
+                    <div class="restoCalificacion">
+                        <span class="estrellas"></span>
+                        <img src="./img/star.png">
+                    </div>
+
+                </div>
+                <span class="calificacion">4.5</span>
+            </article>
             <article class="resto">2</article>
             <article class="resto">3</article>
             <article class="resto">4</article>
-            <article class="resto">5</article>
-            <article class="resto">6</article>
-            <article class="resto">7</article>
-            <article class="resto">8</article>
         </section>
     </main>
 
 
-<script>
+    <script>
         function mostrarAlerta() {
             const alerta = document.querySelector('.modal');
             alerta.classList.remove('hidden');
         }
 
-        document.querySelector('.btn-close').addEventListener('click', function() {
+        document.querySelector('.btn-close').addEventListener('click', function () {
             const modal = document.querySelector('.modal');
             modal.classList.add('hidden');
         });
     </script>
 </body>
+
 </html>
