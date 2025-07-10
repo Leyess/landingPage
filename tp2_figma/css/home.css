@@ -143,7 +143,7 @@ main .restoContainer {
 
 .resto {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 90%;
     /* flex: 0 0 200px; */
     display: flex;
     flex-direction: row;
