@@ -34,7 +34,10 @@ header .imgFondo {
 
 }
 
-header .buscador {    
+header .buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #ffffff;
     position: absolute;
     height: 3em;
@@ -43,25 +46,22 @@ header .buscador {
     bottom: -1.5em;
     border-radius: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .buscador i {
-    flex: 0 0 2em;
+    background-color: #03D99D;
+    color: white;
     height: 100%;
+    width: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #333;
-
 }
 
-.btnBuscador {
+.btnBuscador  {
     flex: 0 0 3em;
     height: 100%;
-    background-color: transparent;    
+    background-color: transparent;
     color: #333;
     border: none;
     cursor: pointer;
@@ -71,10 +71,12 @@ header .buscador {
     flex: 1;
     height: 100%;
     border: none;
-    padding: 0 1em;    
+    padding: 0 1em;
     color: #333;
     border: none;
     border-radius: 5px 0 0 5px;
+    font-size: 1em;
+    outline: none;
 }
 
 .imgFondo img {
@@ -93,11 +95,13 @@ main .categorias {
     gap: 1em;
     overflow: auto hidden;
     scrollbar-width: none;
+    justify-content: space-between;
 }
 
-.pd-2{
+.pd-2 {
     padding: .5em;
 }
+
 .btn {
     padding: 0.5em 1em;
     background-color: slateblue;
@@ -106,7 +110,8 @@ main .categorias {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;}
+    transition: background-color 0.3s ease;
+}
 
 .categorias .icono {
     height: 100px;
@@ -144,12 +149,12 @@ main .restoContainer {
     flex-direction: row;
     align-items: center;
     font-size: 3em;
-    border-radius: 8px;    
+    border-radius: 8px;
     position: relative;
-    font-family:var(--body-text);
+    font-family: var(--body-text);
 }
 
-.resto .restoImg{
+.resto .restoImg {
     /* width: 100%; */
     height: 200px;
     object-fit: cover;
@@ -159,20 +164,42 @@ main .restoContainer {
 
 .infoResto {
     display: flex;
-    flex-direction: column;    
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1em;
     gap: 0.5em;
-    height: 100%; 
-    width: 54%;   
+    height: 100%;
+    width: 54%;
     font-size: 15px;
     background-color: white;
-
     position: absolute;
     top: 0;
     left: 45%;
-    
     border-radius: 0 0 0 25px;
+}
+
+.restoNombre {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.restoDescripcion,
+.restoHorario {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+}
+
+.restoCalificacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40%;
+    color: #03D99D;
+    border-radius: 0 8px 8px 0;
+    margin-top: 30px;
 }
 
 .calificacion {
@@ -188,13 +215,14 @@ main .restoContainer {
     padding: 4px 6px;
     border-radius: 10px 0 10px 0;
     font-weight: bold;
-    font-size:20px;
+    font-size: 20px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
-.modal{
+
+.modal {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -210,17 +238,19 @@ main .restoContainer {
     backdrop-filter: blur(20px);
 }
 
-.encabezadoAlerta{
+.encabezadoAlerta {
     display: flex;
     justify-content: end;
-    
+
 }
+
 .btn-close {
     background-color: transparent;
     border: none;
     font-size: 1.5em;
     cursor: pointer;
 }
+
 @media screen and (orientation: landscape) {
     main .restoContainer {
         flex-direction: row;
