@@ -130,6 +130,13 @@ main .categorias {
     font-weight: 200;
 }
 
+main h2 {
+    font-family: var(--heading);
+    text-align: start;
+    margin: 1em 1em 0 1em;
+    color: #333;
+} 
+
 main .restoContainer {
     padding: 1em;
     display: flex;
