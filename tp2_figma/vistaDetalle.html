@@ -4,40 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/detalle.css">
     <title>Detalles</title>
 </head>
 
 <body>
-    <main>
-        <header>
-            <img src="https://stronglify-1.s3.sa-east-1.amazonaws.com/vajillascorona/Que-es-un-restaurante-de-autor.jpg"
-                alt="restaurante 1" class="restoImg">
-        </header>
 
-        <section class="restoContainer">
-            <div class="infoResto">
-                <h2 class="restoNombre">II Ravioloni</h2>
-                <p class="restoDescripcion">Comida Italiana</p>
+    <header>
+        <img src="https://stronglify-1.s3.sa-east-1.amazonaws.com/vajillascorona/Que-es-un-restaurante-de-autor.jpg"
+            alt="restaurante 1" class="imgFondo">
+    </header>
+
+    <section class="restoContainer">
+        <span class="calificacion">4.5</span>
+        <div class="infoResto">
+            <h2 class="restoNombre">II Ravioloni</h2>
+            <p class="restoDescripcion">Comida Italiana</p>
+        </div>
+        <div class="restoIconos">
+            <div class="icono">
+                <img src="./img/faClock.png" alt="reloj">
+                <p>9:00 - 11:00</p>
             </div>
-            <div class="restoIconos">
-                <div class="icono">
-                    <img src="./img/faClock.png" alt="reloj">
-                    <p>9:00 - 11:00</p>
-                </div>
-                <div class="icono">
-                    <img src="./img/mapPointer.png" alt="reloj">
-                    <p>1.5 KM</p>
-                </div>
-                <div class="icono">
-                    <img src="./img/delivery.png" alt="reloj">
-                    <p>9:00 - 11:00</p>
-                </div>
+            <div class="icono">
+                <img src="./img/mapPointer.png" alt="reloj">
+                <p>1.5 KM</p>
             </div>
-            <div class="descripcionDetallada">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maiores ad modi perspiciatis veritatis porro molestias, cumque ratione aliquam? Possimus repellat error voluptates neque tempore eaque veniam provident enim aperiam?
+            <div class="icono">
+                <img src="./img/delivery.png" alt="reloj">
+                <p>9:00 - 11:00</p>
             </div>
-        </section>
-    </main>
+        </div>
+        <p class="descripcionDetallada">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, iure quae
+            nihil quidem tenetur eos at magnam veniam aperiam minima, hic deleniti molestias, autem esse reiciendis?
+            Eveniet, aliquid mollitia. Cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, inventore
+            nobis obcaecati fugiat ad porro, veniam temporibus quia laudantium sunt unde ipsum velit reprehenderit
+            sequi, accusamus reiciendis consequatur quos quod!</p>
+    </section>
+
+    <section class="botonesMenu">
+        <button class="btnDetails">DETAILS</button>
+        <button class="btnMenu">MENU</button>
+        <button class="btnRewievs">REVIEWS</button>
+    </section>
+
 </body>
 
 </html>
